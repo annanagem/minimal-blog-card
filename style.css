@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Sora';
+  src: url('font/Sora/Sora-VariableFont_wght.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+      * {
+        font-family: 'Sora', 'Segoe UI', Roboto, sans-serif;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        overflow-x: hidden; /* impede rolagem lateral */
+        width: 100%;        /* garante que o conteúdo não ultrapasse */
+      }
+
+.main-container {
+        border-radius: 16px;
+        background-color: #FFFFFF;
+        width: 368px;
+        box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+        padding: 16px 16px 20px 16px;
+      }
+
+.image-section img {  
+        height: auto;
+        align: center;
+        margin-bottom: 16px;
+        border-radius: 8px;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       /* centraliza verticalmente */
+        min-height: 100vh;         /* ocupa a altura total da tela */
+        margin: 0;
+        font-size: 0.875rem;
+        background-color: #FAFAF9; /* opcional */
+      }     
+
+      hr {
+        width: calc(100% + 32px); /* soma os paddings (16 + 16) */
+        margin: 20px -16px;       /* remove o recuo lateral */
+        border: none;
+        border-top: 1px solid #E5E7EB;
+      }
+      
+      .box {
+        background: #F2EAFDB3;     /* cor de fundo */
+        padding: 6px 16px;       /* espaço interno */
+        border-radius: 16px;       /* cantos arredondados */
+        display: inline-block;    /* para ajustar ao conteúdo */
+        max-width: 100%;
+        border: 18px;
+        font-size: 0.625rem;
+        font-weight: bold;
+        color: #7C3AED; 
+        margin-bottom: 16px;
+      }
+
+      .title-section h1 {
+        color: #20293AE6;
+        font-size: 1.125rem;
+        margin-bottom: 6px;
+      }
+
+      .title-section p {
+        color: #394150b3;
+        font-size: 0.875rem;
+        margin-right: 20px;
+        line-height: 20px;
+      }
+      
+      .author-section p {
+        font-size: 0.75rem;
+        margin-top: 16px;
+        color: #394150cc;
+        font-weight: 550;
+      }
+
+      .author-info a {
+        text-decoration: none;
+        color:#7C3AED;
+      }
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0; /* zera as margens padrão */
+        background-color: #FAFAF9; /* opcional */
+      }
+
+      .main-container {
+        margin: 164px 456px; /* 164px top/bottom e 456px left/right */
+        }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+       }
+         }  
+
+       /* Laptops e Tablets */
+@media screen and (max-width: 1024px) {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+           body {
+        margin: 0; /* zera as margens padrão */
+        background-color: #FAFAF9; /* opcional */
+      }
+
+      .main-container {
+        margin: 164px 456px; /* 164px top/bottom e 456px left/right */
+        }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+       }
+
+  /* Desktop */
+@media screen and (min-width: 1025px) {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+    body {
+        margin: 0; /* zera as margens padrão */
+        background-color: #FAFAF9; /* opcional */
+      }
+
+      .main-container {
+        margin: 164px 456px; /* 164px top/bottom e 456px left/right */
+        }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+       }
